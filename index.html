@@ -15,12 +15,12 @@
 <body>
     <nav class="navigationBar">
         <div class="nav-left">
-            <a class="logo" href="">logo</a>
+            <a class="logo" href="">Logo</a>
+            <a class="lear-more" href="">Learn More</a>
         </div>
         <div class="nav-center">
-            <a class="start-now" href="index-three.html">start now</a>
-            <a class="sign-in" href="index-four.html">sign in</a>
-            <a class="memories" href="index-four.html">my memories</a> 
+            <a class="start-now" href="index-three.html">Start Now</a>
+            <a class="sign-in" href="index-four.html">Sign In</a>  
         </div>
         <div class="nav-right">
             <a class="contact" href="index-two.html#contactForm">contact</a>
@@ -30,19 +30,30 @@
     <main>
         <div class="frame">
             <div class="inner-frame">
-                <!-- Swiper -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="kidsVisit-VR" src="Images\Grandchildren with VR.png" alt="Kids wearing VR glasses for virtual visit"></div>
-                    <div class="swiper-slide"><img class="threeD-scanner-fb" src="Images\3d-scanner-500x500.jpg" alt="threeD-scanner"></div>
-                    <div class="swiper-slide"><img class="seniors-VR"  src="Images\image seniors vr glasses.jpg" alt="seniors-VR"></div>
-                    <div class="swiper-slide"><img class="threeD-scanner-simple-fb"  src="Images\3d-scanner-for-statue-250x250.png" alt="threeD-scanner-simple"></div>
-                    <div class="swiper-slide"><img class="GrparantsVisit-VR" src="Images\depositphotos_242485826-stock-illustration-senior-man-woman-couple-sitting.jpg" alt="Seniors wearing VR glasses for virtual visit"></div>
-                    </div>
+                <div class="mission">
+                    <h1>OUR MISSION</h1>
+                    <p>It's simple. Through the use of virtual reality technology we strive to improve the quality of life for older adults. <br>
+                        <br>
+                        <span>How is this possible?</span><br>
+                        Thanks to 3D scantechnologies and fantastic software we can reproduce anything from small objects to entire rooms, buildings and outside spaces in to a virtual reality with intuitive access to it. <br>
+                        Taking care of the mind and body true VR has proven very effective.
+                        That’s why our system can support other VR platforms that provide Immersive experiences and therapies.
+                    </p>
+                    
                 </div>
-                    <img class="livingroom-scan" src="Images\matterport-header-750x400.jpg" alt="Livingroom-Scan">
-                    <!--<img class="threeD-scanner" src="Images\3d-scanner-500x500.jpg" alt="threeD-scanner">
-                    <img class="threeD-scanner-simple"  src="Images\3d-scanner-for-statue-250x250.png" alt="threeD-scanner-simple">-->
+                <div class="image-container">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="seniors-VR"  src="Images\image seniors vr glasses.jpg" alt="seniors-VR"></div>
+                            <div class="swiper-slide"><img class="kidsVisit-VR" src="Images\Grandchildren with VR.png" alt="Kids wearing VR glasses for virtual visit"></div>
+                            <div class="swiper-slide"><img class="threeD-scanner-fb" src="Images\3d-scanner-500x500.jpg" alt="threeD-scanner"></div>
+                            <div class="swiper-slide"><img class="threeD-scanner-simple-fb"  src="Images\3d-scanner-for-statue-250x250.png" alt="threeD-scanner-simple"></div>
+                            <div class="swiper-slide"><img class="GrparantsVisit-VR" src="Images\depositphotos_242485826-stock-illustration-senior-man-woman-couple-sitting.jpg" alt="Seniors wearing VR glasses for virtual visit"></div>
+                        </div>
+                        <h2 class="swipe-image-text">Swipe Image</h2>
+                    </div>
+                    
                 </div>
             </div>    
         </main>
@@ -51,7 +62,6 @@
     </footer>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {});

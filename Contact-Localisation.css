@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eca945;
+}
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    background-color:#c2c5c7;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+}
+.main {
+    height: 80%;
+    width: 90%;
+    border: 3px solid #ccc;
+    background: #eee;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+#contactForm {
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contactForm h1 {
+padding: 10px 10px;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+.submit-btn {
+    padding: 10px;
+    background-color: green;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: large;
+}
+.call-text {
+    font-size: x-large;
+    padding-top: 50px;
+
+}
+.call-btn {
+    padding: 10px;
+    background-color: green;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: medium;
+}
+.address {
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    font-size: large;
+    justify-content: center;
+}
+

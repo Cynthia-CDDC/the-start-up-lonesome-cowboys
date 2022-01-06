@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!---->
     <link rel="stylesheet" href="StartUp.css">
     <link rel="stylesheet" href="index-two.html">
     <link rel="stylesheet" href="index-three.html">
@@ -11,25 +14,47 @@
 </head>
 <body>
     <nav class="navigationBar">
-        <button>logo</button>
-        <button><a href="index-three.html">start now</a></button>
-        <button><a href="index-four.html">sign in</a></button>
-        <button>my memories</button>
-        <button><a href="index-two.html#contactForm">contact</a></button>
-        <button><a href="index-two.html#googleMap">localisation</a></button>
+        <div class="nav-left">
+            <a class="logo" href="">logo</a>
+        </div>
+        <div class="nav-center">
+            <a class="start-now" href="index-three.html">start now</a>
+            <a class="sign-in" href="index-four.html">sign in</a>
+            <a class="memories" href="index-four.html">my memories</a> 
+        </div>
+        <div class="nav-right">
+            <a class="contact" href="index-two.html#contactForm">contact</a>
+            <a class="localisation" href="index-two.html#googleMap">localisation</a>
+        </div>
     </nav>
     <main>
-        <img src="Images\depositphotos_242485826-stock-illustration-senior-man-woman-couple-sitting.jpg" alt="Seniors wearing VR glasses for virtual visit">
-        <img src="Images\two-kids-sister-and-brother-wearing-clipart-vector_csp67387951.webp" alt="Kids wearing VR glasses for virtual visit">
         <div class="frame">
-            <img class="livingroom-scan" src="Images\matterport-header-750x400.jpg" alt="Livingroom-Scan">
-            <img class="threeD-scanner" src="Images\3d-scanner-500x500.jpg" alt="threeD-scanner">
-            <img class="threeD-scanner-simple"  src="Images\3d-scanner-for-statue-250x250.png" alt="threeD-scanner-simple">
-            <img class="seniors-VR"  src="Images\image seniors vr glasses.jpg" alt="seniors-VR">
-        </div>
-    </main>
+            <div class="inner-frame">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="kidsVisit-VR" src="Images\Grandchildren with VR.png" alt="Kids wearing VR glasses for virtual visit"></div>
+                    <div class="swiper-slide"><img class="threeD-scanner-fb" src="Images\3d-scanner-500x500.jpg" alt="threeD-scanner"></div>
+                    <div class="swiper-slide"><img class="seniors-VR"  src="Images\image seniors vr glasses.jpg" alt="seniors-VR"></div>
+                    <div class="swiper-slide"><img class="threeD-scanner-simple-fb"  src="Images\3d-scanner-for-statue-250x250.png" alt="threeD-scanner-simple"></div>
+                    <div class="swiper-slide"><img class="GrparantsVisit-VR" src="Images\depositphotos_242485826-stock-illustration-senior-man-woman-couple-sitting.jpg" alt="Seniors wearing VR glasses for virtual visit"></div>
+                    </div>
+                </div>
+                    <img class="livingroom-scan" src="Images\matterport-header-750x400.jpg" alt="Livingroom-Scan">
+                    <!--<img class="threeD-scanner" src="Images\3d-scanner-500x500.jpg" alt="threeD-scanner">
+                    <img class="threeD-scanner-simple"  src="Images\3d-scanner-for-statue-250x250.png" alt="threeD-scanner-simple">-->
+                </div>
+            </div>    
+        </main>
     <footer>
 
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
 </body>
 </html>

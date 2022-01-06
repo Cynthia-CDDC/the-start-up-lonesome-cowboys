@@ -11,26 +11,127 @@ user-select: none;
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
+} /*end of Bootstrap core CSS*/
+body {
+    justify-content: center;
+    background-color: #eca945;
+}
+.navigationBar {
+    width: 98%;
+    /*background-color: hsl(276, 6%, 85%);*/
+    padding: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;        
+}
+.navigationBar a {
+    padding: 10px 10px;
+    background-color:#989b9e;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+.nav-left {
+    width: auto;
+}
+.nav-center {
+    width: auto;
+}
+.nav-right {
+    width: auto;
+}
+.logo {
+
+}
+.start-now {
+    
+}
+.sign in {
+    
+}
+.memories {
+    
+}
+.contact {
+
+}
+.localisation {
+
+}
+.swiper {
+    position: absolute; /**/
+    width: 30%;
+    height: 30%;
+    top: 5%;
+    left: 60%;
+  }
+  /* Demo styles*/ 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+.kidsVisit-VR {
+    width: 600px;
+    height: 329px;
+}
+.seniors-VR {
+    width: 600px;
+    height: 329px;
+}
+.threeD-scanner-fb {
+    width: 600px;
+    height: 329px;
+}
+.threeD-scanner-simple-fb {
+    width: 600px;
+    height: 329px;
+}
+.GrparantsVisit-VR {
+    width: 600px;
+    height: 329px;
 }
 .frame {
+    position: relative;
     width: 95vw;
     height: 90vh;
     border: 3px solid #ccc;
     background: #eee;
-    margin: auto;
     padding: 15px 10px;
+    display: flex;
+    justify-content: center;
 }
 .livingroom-scan {
     position: relative;
     width: 100%;
     height: 100%;
 }
-.frame {
-    position: relative;
-}
 .threeD-scanner {
     position: absolute;
-    top: 30px;
+    top: 500px;
     left: 30px;
     height: 20%;
     width: 10%;

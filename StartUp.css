@@ -7,7 +7,7 @@ text-anchor: middle;
 -moz-user-select: none;
 user-select: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 580px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
@@ -15,146 +15,235 @@ user-select: none;
 * {
     box-sizing: border-box;
 }
-body {
-    justify-content: center;
-    align-content: center;
-    background-color: #eca945;
+@media only screen and (max-width: 581px) {
+    body {
+        justify-content: center;
+        align-content: center;
+        background-color: #eca945;
+    }
+    .navigationBar {
+        width: 95%;
+        padding: 1%;
+        margin-bottom:1%;
+        display: flex;
+    }
+    .navigationBar a {
+        background-color:#c2c5c7;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+        font-size: small;
+    }
+    .nav-left {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-center {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .navigationBar a:hover {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 100%;
+        background-size: auto 6px;
+        background-repeat: repeat-x;
+        text-decoration: none;
+    }
+    .inner-frame {
+        background-image: url("./Images/matterport-header-750x400.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .mission {
+        background-color: white;
+        opacity: 50%;
+    }
+    .mission h1 {
+        margin-top: 0;
+        color: black;
+    }
+    .mission p {
+        color:rgb(5, 5, 5);
+        font-size: large;
+        font-weight: bold;
+    }
+    span {
+        font-size: x-large;
+    }
+    .image-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 5%;
+        left: 65%;
+        width: 30%;
+        height: 30%;
+    }
+    .swiper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .swipe-image-text {
+        position: absolute;
+        bottom: 0px;
+        z-index: 20;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer {
+        text-align: center;
+    }    
 }
-.navigationBar {
-    width: 95%;
-    padding: 1%;
-    margin-bottom:1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;        
-}
-.navigationBar a {
-    padding: 10px 10px;
-    background-color:#c2c5c7;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-    font-size: large;
-}
-.nav-left {
-    width: auto;
-}
-.nav-center {
-    width: auto;
-}
-.nav-right {
-    width: auto;
-}
-.navigationBar a:hover {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: 0 100%;
-    background-size: auto 6px;
-    background-repeat: repeat-x;
-    text-decoration: none;
-}
-.frame {
-    position: relative;
-    width: 95vw;
-    height: 80vh;
-    border: 3px solid #ccc;
-    background: #eee;
-    padding: 15px 10px;
-    display: flex;
-    justify-content: center;
-}
-.inner-frame {
-    background-image: url("./Images/matterport-header-750x400.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-.mission {
-    background-color: white;
-    opacity: 50%;
-}
-.mission h1 {
-    margin-top: 0;
-    color: rgb(5, 5, 5);
-    padding-left: 90px;
-}
-.mission p {
-    color:rgb(5, 5, 5);
-    padding-left: 90px;
-    padding-right: 40%;
-    font-size: large;
-    font-weight: bold;
-}
-span {
-    font-size: x-large;
-}
-.image-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 5%;
-    left: 65%;
-    width: 30%;
-    height: 30%;
-}
-.swiper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.swipe-image-text {
-    position: absolute;
-    bottom: 0px;
-    z-index: 20;
-    left: 50%;
-    transform: translateX(-50%);
-}
-  /* Demo styles*/ 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50px;
-}
-.kidsVisit-VR {
-    width: 600px;
-    height: 329px;
-}
-.seniors-VR {
-    width: 600px;
-    height: 329px;
-}
-.threeD-scanner-fb {
-    width: 600px;
-    height: 329px;
-}
-.threeD-scanner-simple-fb {
-    width: 600px;
-    height: 329px;
-}
-.GrparantsVisit-VR {
-    width: 600px;
-    height: 329px;
-}
-footer {
-    text-align: center;
+@media screen and (min-width: 582px) {
+    body {
+        justify-content: center;
+        align-content: center;
+        background-color: #eca945;
+    }
+    .navigationBar {
+        width: 95%;
+        padding: 1%;
+        margin-bottom:1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+    }
+    .navigationBar a {
+        padding: 10px 10px;
+        background-color:#c2c5c7;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white;
+        font-size: large;
+    }
+    .nav-left {
+        width: auto;
+    }
+    .nav-center {
+        width: auto;
+    }
+    .nav-right {
+        width: auto;
+    }
+    .navigationBar a:hover {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+        background-position: 0 100%;
+        background-size: auto 6px;
+        background-repeat: repeat-x;
+        text-decoration: none;
+    }
+    .frame {
+        position: relative;
+        width: 95vw;
+        height: 80vh;
+        border: 3px solid #ccc;
+        background: #eee;
+        padding: 15px 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .inner-frame {
+        background-image: url("./Images/matterport-header-750x400.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .mission {
+        background-color: white;
+        opacity: 50%;
+    }
+    .mission h1 {
+        margin-top: 0;
+        color: rgb(5, 5, 5);
+        padding-left: 90px;
+    }
+    .mission p {
+        color:rgb(5, 5, 5);
+        padding-left: 90px;
+        padding-right: 40%;
+        font-size: large;
+        font-weight: bold;
+    }
+    span {
+        font-size: x-large;
+    }
+    .image-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 5%;
+        left: 65%;
+        width: 30%;
+        height: 30%;
+    }
+    .swiper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .swipe-image-text {
+        position: absolute;
+        bottom: 0px;
+        z-index: 20;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+      /* Demo styles*/ 
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+    
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    .kidsVisit-VR {
+        width: 600px;
+        height: 329px;
+    }
+    .seniors-VR {
+        width: 600px;
+        height: 329px;
+    }
+    .threeD-scanner-fb {
+        width: 600px;
+        height: 329px;
+    }
+    .threeD-scanner-simple-fb {
+        width: 600px;
+        height: 329px;
+    }
+    .GrparantsVisit-VR {
+        width: 600px;
+        height: 329px;
+    }
+    footer {
+        text-align: center;
+    }    
 }
 
 
